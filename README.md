@@ -9,7 +9,7 @@ $ npm install
 ```
 
 ## Database
-Run the DumpDB.sql file on MySQL Workbench to create de database structure
+Run the DumpDB.sql file on MySQL Workbench to create the database structure
 
 ## Enviroment Variables
 Use .env.example to create a .env.dev file and fill in the values
@@ -29,7 +29,7 @@ $ npm run start:prod
 
 ## Stay in touch
 
-- Author - [Jefferson Rivera](https://jegeirma.dev)
+- Author - [Jefferson Rivera](https://jegerima.dev)
 
 ## License
 
