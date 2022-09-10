@@ -21,7 +21,7 @@ import { UserProfile } from './users/entities/user-profile.entity';
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
         type: 'mysql',
-        host: configService.get<string>('DB_HOST'),
+        host: configService.get('MYSQL_HOST') || configService.get('DB_HOST'),
         port: +configService.get('DB_PORT'),
         username: configService.get<string>('DB_USER'),
         password: configService.get<string>('DB_PASS'),
