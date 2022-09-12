@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `cgcdev` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `cgcdev`;
+CREATE DATABASE  IF NOT EXISTS `cgcbddev` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `cgcbddev`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
--- Host: localhost    Database: cgcdev
+-- Host: localhost    Database: cgcbddev
 -- ------------------------------------------------------
 -- Server version	5.7.36
 

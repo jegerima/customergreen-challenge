@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   dev:
-    container_name: cgchallenge
-
+    container_name: cgcbackend
     build:
       context: .
       target: development
@@ -29,7 +28,6 @@ services:
     env_file:
       - .env
     environment:
-      MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASS}
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_ROOT_PASSWORD: ${DB_PASS}
@@ -37,9 +35,4 @@ services:
       - "${DB_PORT}:${DB_PORT}"
     restart: always
     volumes:
-      - mysql:/var/lib/mysql
-      - mysql_config:/etc/mysql
-
-volumes:
-  mysql:
-  mysql_config:
+      - ./dump/dev:/docker-entrypoint-initdb.d
